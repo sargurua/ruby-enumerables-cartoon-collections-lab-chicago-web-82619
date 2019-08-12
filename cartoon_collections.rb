@@ -10,12 +10,7 @@ end
 
 def long_planeteer_calls(calls)# code an argument here
   # Your code here
-  array = calls.map{|n| n.length > 4}
-  if array.include?(true)
-    return true
-  else
-    return false
-  end
+  array.any? { |word| word.length > 4}
 end
 
 def find_the_cheese(strings)# code an argument here
